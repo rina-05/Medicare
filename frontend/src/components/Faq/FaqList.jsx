@@ -8,7 +8,8 @@ const FaqList = () => {
         <FaqItem item={item} key={index} />
       ))}
     </ul>
-  );
+  ); 
+  //*123456
 };
 
 export default FaqList;
