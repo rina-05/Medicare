@@ -15,6 +15,7 @@ import About from "../components/About/About";
 import ServiceList from "../components/Services/ServiceList";
 import DoctorList from "../components/Doctors/DoctorList";
 import FaqList from "../components/Faq/FaqList";
+import Testimonial from "../components/Testimonial/Testimonial";
 
 
 const Home = () => {
@@ -28,7 +29,7 @@ const Home = () => {
             <div>
               <div className="lg:w-[570px]">
                 <h1 className="text-[36px] leading-[46px] text-headingColor font-[800] md:text-[60px] md:leading-[70px]">
-                  We help patients live a healthy, longer life.
+                We help patients live a healthy, longer life.
                 </h1>
                 <p className="text_para">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -237,7 +238,7 @@ const Home = () => {
                </div>
 
                <div className="flex items-center gap-[6px] lg:gap-[10px] mt-2 lg:mt-[18px]">
-                <img src={avatarIcon} alt="" />
+                <img src={avatarIcon} alt="avatar icon" />
                 <h4 className="text-[10px] leading-3 lg:text-[16px] lg:leading-[22px] font-[700]
                 text-headingColor">
                   Wayne Collins
@@ -284,6 +285,22 @@ const Home = () => {
         </div>
       </section>
       {/* ==================== faq section end ============= */}
+
+      {/* ===================== testimonial ================= */}
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">What our patinet say</h2>
+            <p className="text_para text-center">
+              World-class care for eveeryone.our health system offers unmatched,
+              expert health care.
+            </p>
+          </div>
+
+          <Testimonial />
+        </div>
+        </section>
+      {/* ================= testimonial  end ================ */}
 
       </>
   );
